@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- Nav -->
+    <header class="header">
+      <nav class="nav">
+        <div class="nav_div"> <img
+          src="https://raw.githubusercontent.com/alam3577/new-quiz/master/src/Assets/Images/logo.png"
+          alt=""
+          id="logo"
+          class="nav__logo"
+        />
+        <p>
+          Todo App
+        </p>
+        </div>
+        <ul class="nav__links">
+          <li class="nav__item">
+            <input id="search" type='text' placeholder="Search">
+          </li>
+          <li class="nav__item ttt">
+            <i class="fa fa-filter "></i>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- NAv Ends -->
+    <!-- Filters -->
+    <div class="animation__box__filter">
+      <div class="animation_f  ">
+        <div class="ani__div_f">
+          <div class="closeBtndiv_f">
+            <h4>Apply Filter</h4>
+
+            <i class='closeBtn bx bx-x' style='color:#f8f8f8'  ></i>
+          </div>
+         <div class="tost__container_f">
+            <div id="all_f" class="f_l"> All Task </div>
+            <div id="com_f" class="f_l">Complted Task</div>
+            <div id="pen_f" class="f_l">Pending Task</div>
+            <div id="non_c_f" class="f_l">Not Completed Task</div>
+         </div>
+       </div>
+     </div>
+  </div>
+<!-- Toast -->
+    <div class="animation__box">
+      <div class="animation ">
+        <div class="ani__div">
+          <div class="closeBtndiv">
+            <i class='closeBtn bx bx-x' style='color:#f8f8f8'  ></i>
+          </div>
+         <div class="tost__container">
+           <div>
+             <i class='bx bx-error' style='color:#ffffff'  ></i> 
+           </div>
+            <p class="toast__content"></p>
+         </div>
+       </div>
+     </div>
+  </div>
+    <!-- ToDo section starts from here -->
+    <section class="todo__section modal hidden">
+     
+      <div class="todo__container">
+        <input required class="title" type="text" placeholder="Title" />
+        <span class="hidden tfr rr"> Title Filed Required</span>
+        <textarea
+          class="body"
+          type="text"
+          placeholder="Description"
+        ></textarea>
+        <span class="hidden tdr rr"> Task Description Required</span>
+
+        <input type="datetime-local" class="dt" id="meeting_time"
+        name="txtDate" 
+       >
+       <span class="hidden dtr rr">Date and time required</span>
+        <button class="add__task__btn">Add Task</button>
+      </div>
+    </section>
+
+    <!-- Item section -->
+    <div class="message">
+      <section class="list__section"></section>
+    </div>
+    
+    <section class="err__section"></section>
+    <section class="addTaskBtn">
+      <button class="button" style="vertical-align:middle"><span>Add Task </span>
+    </section>
+     
+
+    <div class="overlay hidden"></div>
+    <div id="loading" class="lds-hourglass "></div>
+    <script src="./js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+  </body>
+</html>
