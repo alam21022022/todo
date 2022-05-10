@@ -1,4 +1,5 @@
-const url = "http://localhost:3000/lists";
+// const url = "http://localhost:3000/lists";
+const url = "https://s-todo-app-a.herokuapp.com/lists";
 showLists();
 let editURL;
 
